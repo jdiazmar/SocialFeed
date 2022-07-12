@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import DisplayPost from './Components/DisplayPost/DisplayPost';
 
 
 
@@ -11,26 +11,7 @@ const [entries, setEntries] = useState([{name: 'Josmar Diaz', post: 'This is my 
   
   return (
     <div>
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Post</th>
-          </tr>
-
-        </thead>
-        <tbody>
-         {entries.map((entry) => {
-          return (
-            <tr>
-              <td>{entry.name}</td>
-              <td>{entry.post}</td>
-            </tr>
-
-          );
-         })}
-        </tbody>
-      </table>
+      <DisplayPost userEntries={entries} />
     </div>
   );
 }
