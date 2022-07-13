@@ -1,21 +1,26 @@
+import './DisplayPost.css';
+
 
 const DisplayPost = (props) => {
     return ( 
-        <table>
+        <table className="table">
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Post</th>
+            <th></th>
+            <th></th>
           </tr>
 
         </thead>
         <tbody>
          {props.userEntries.map((entry) => {
           return (
-            <tr>
-              <td>{entry.name}</td>
-              <td>{entry.post}</td>
-            </tr>
+            <div className="display-post-form">
+              <tr>
+                <td>{entry.name}</td>
+                <td>{entry.post}</td>
+              </tr>
+            </div>
+
 
           );
          })}
