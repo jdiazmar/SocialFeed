@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import DisplayPost from './Components/DisplayPost/DisplayPost';
 import CreatePost from './Components/CreatePost/CreatePost';
+import NavBar from './Components/NavBar/NavBar';
 import './App.css';
+
 
 function App() {
 
@@ -15,7 +17,9 @@ function App() {
   return (
     <div className='container-fluid'>
       <div className='row'>
-        <h3>SocialFeed</h3>
+        <div className='nav-bar'>
+          <NavBar />
+        </div>
           <div className='col-md-12'>
             <div className='border-box'>
               <CreatePost addNewPostProperty={addNewPost} />
