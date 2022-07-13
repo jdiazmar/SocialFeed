@@ -17,9 +17,15 @@ const DisplayPost = (props) => {
             <div className="display-post-form">
               <tr>
                 <td>{entry.name}</td>
+              </tr>
+            <div>
+              <tr>
                 <td>{entry.post}</td>
               </tr>
             </div>
+            </div>
+            
+
 
 
           );
