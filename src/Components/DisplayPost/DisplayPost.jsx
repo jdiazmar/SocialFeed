@@ -24,11 +24,7 @@ const DisplayPost = (props) => {
               </tr>
             </div>
             </div>
-            
-
-
-
-          );
+            );
          })}
         </tbody>
       </table>
