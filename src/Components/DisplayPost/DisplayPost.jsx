@@ -1,4 +1,5 @@
 import './DisplayPost.css';
+import PostButton from '../Post/Post';
 
 
 const DisplayPost = (props) => {
@@ -23,6 +24,7 @@ const DisplayPost = (props) => {
                 <td>{entry.post}</td>
               </tr>
             </div>
+            <PostButton />
             </div>
             );
          })}

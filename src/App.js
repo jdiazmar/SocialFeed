@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import DisplayPost from './Components/DisplayPost/DisplayPost';
 import CreatePost from './Components/CreatePost/CreatePost';
 import NavBar from './Components/NavBar/NavBar';
+import PostButton from './Components/Post/Post';
 import './App.css';
 
 
@@ -26,6 +27,7 @@ function App() {
             </div>
             <div className='border-box'>
               <DisplayPost userEntries={entries} />
+          
             </div>
           </div>
       </div>
